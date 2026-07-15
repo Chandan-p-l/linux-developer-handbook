@@ -1,0 +1,116 @@
+site_name: Ubuntu External SSD Guide
+site_description: The Complete Beginner's Guide to Ubuntu, Linux Development and Portable Developer Workstations
+site_author: Ubuntu External SSD Guide Contributors
+repo_url: https://github.com/username/ubuntu-external-ssd-guide
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - scheme: default
+      primary: ubuntu
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: ubuntu
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - mermaid2
+  - awesome-pages
+
+nav:
+  - Introduction: 
+    - 01-introduction.md
+    - 02-why-linux.md
+    - 03-linux-history.md
+    - 04-ubuntu.md
+    - 05-linux-vs-windows.md
+  - Preparation:
+    - 06-why-external-ssd.md
+    - 07-hardware.md
+    - 08-storage.md
+    - 09-file-systems.md
+    - 10-bios.md
+    - 11-uefi.md
+    - 12-gpt-vs-mbr.md
+  - Installation:
+    - 13-download-ubuntu.md
+    - 14-verify-download.md
+    - 15-rufus.md
+    - 16-ventoy.md
+    - 17-create-bootable-usb.md
+    - 18-boot-menu.md
+    - 19-live-usb.md
+    - 20-installation.md
+    - 21-partitioning.md
+    - 22-bootloader.md
+    - 23-first-boot.md
+  - Setup & Dev Tools:
+    - 24-system-update.md
+    - 25-drivers.md
+    - 26-google-chrome.md
+    - 27-vscode.md
+    - 28-git.md
+    - 29-github.md
+    - 30-nodejs.md
+    - 31-python.md
+    - 32-java.md
+    - 33-docker.md
+  - Databases & Hosting:
+    - 34-postgresql.md
+    - 35-mysql.md
+    - 36-mongodb.md
+    - 37-firebase.md
+    - 38-vercel.md
+    - 39-netlify.md
+    - 40-hostinger.md
+  - Server Config:
+    - 41-nginx.md
+    - 42-apache.md
+  - Linux Mastery:
+    - 43-linux-terminal.md
+    - 44-linux-commands.md
+    - 45-file-permissions.md
+    - 46-package-manager.md
+    - 47-shell-scripting.md
+  - Workflows & Maintenance:
+    - 48-developer-workflow.md
+    - 49-portable-development.md
+    - 50-performance.md
+    - 51-backup.md
+    - 52-security.md
+    - 53-troubleshooting.md
+    - 54-faq.md
+    - 55-glossary.md
+    - 56-resources.md
